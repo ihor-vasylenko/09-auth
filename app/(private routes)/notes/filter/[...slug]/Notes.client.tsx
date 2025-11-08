@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import { fetchNotes, PER_PAGE } from '@/lib/api';
+import { fetchNotes, PER_PAGE } from '@/lib/api/clientApi';
 import NoteList from '@/components/NoteList/NoteList';
 import EmptyListMessage from '@/components/EmptyListMessage/EmptyListMessage';
 import Pagination from '@/components/Pagination/Pagination';

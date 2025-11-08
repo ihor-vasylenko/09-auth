@@ -2,6 +2,7 @@ import { NOTES_FILTER_ALL } from '@/lib/constants';
 import TagsMenu from '../TagsMenu/TagsMenu';
 import css from './Header.module.css';
 import Link from 'next/link';
+import AuthNavigation from '../AuthNavigation/AuthNavigation';
 
 const Header = () => (
   <header className={css.header}>
@@ -16,9 +17,8 @@ const Header = () => (
         <li>
           <Link href={`/notes/filter/${NOTES_FILTER_ALL}`}>Notes</Link>
         </li>
-        <li>
-          <TagsMenu />
-        </li>
+        <TagsMenu />
+        <AuthNavigation />
       </ul>
     </nav>
   </header>
